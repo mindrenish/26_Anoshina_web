@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ПОКУПАЙТЕ ДЕНЬГИ</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <button class="darkModeButton" onclick="toggleDark()">Тёмная тема</button>
+    <main>
+    <section class="mundo">
+        <h1>МУНДО ПРОДАВАТЬ ДЕНЬГИ, ПОКУПАТЬ ДЕНЬГИ!</h1>
+        <img class="mundo_pic" src="src/corporate_mundo.png">  
+    </section>
+    
+
+
+    <h2>Топ 5 причин иметь деньги</h2>
+    <section class="text1">
+        <div>
+            <ul>
+                <li>1: Я МУНДО ГОВОРИ,МНОГО ДЕНЕГ ПОКУПАТЬ ЛЮБОВЬ.</li>
+                <li>2: Я МНОГО ДЕНЕГ ПОКУПАТЬ БАБ.</li>
+                <li>3: Я МНОГО ДЕНЕГ ВЫГЛЯДЕТЬ КРУТА.</li>
+                <li>4: Я МНОГО ДЕНЕГ ПОКУПАТЬ ОДЕЖДУ НА МУНДО.</li>
+                <li>5: Я можно купить дошик на обед И МУНДО.</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <ul>
+                <li>Мундо говори: деньги - это здоровье! Инвестируй в свое благополучие!"</li>
+                <li>Покупка денег - это правильный диагноз! Не упусти шанс!</li>
+                <li>Деньги для Мундо - это возможность, а не проблема! Присоединяйся к успеху!</li>
+                <li>Заработай на деньги, чтобы зарабатывать еще больше! Мундо одобряет!</li>
+                <li>Не откладывай на завтра, покупай деньги сегодня! Мундо знает, что говорит!</li>
+            </ul>
+        </div>
+    </section>
+    
+    <h2>Отзывы пользовелей</h2>
+    
+    <section class="makeReview">
+        <h2>Оставить отзыв!</h2>
+        <form id="form">
+            <p>Имя: <input type="text" id="name" autocomplete="off"></p>
+            <p>Оценка: <select name="rating" id="rating">
+                <option value="0" selected>---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select></p>
+            <p>Отзыв: <textarea name="text" id="text" autocomplete="off"></textarea></p>
+            <button type="button" onclick="storeInput()">Отправить</button>
+        </form>
+    </section>
+
+    <section class="review" id="review"></section>
+    
+    <section class="ad">
+        <img src="src/ad1.png"  width="400" >  
+        <img src="src/ad2.png"  width="400" >  
+    </section>
+
+    </main>
+    
+</body>
+<script src="cookie.js"></script>
+<script src="script.js"></script>
+</html>

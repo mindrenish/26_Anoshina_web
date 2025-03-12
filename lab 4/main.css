@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: plum;
+    color: black;
+    font-family: "Comic Sans MS";
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.mundo_pic{
+    width: 100%;
+    height: 300px;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text1 div{
+    background: rgba(255,255,255,0.2);
+}
+.mundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ad{
+    bottom: 0;
+    right: 0;
+}
+.review{
+    width: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.review div{
+    width: 300px;
+}
+    
+
+
+
+@media (max-width: 500px){
+    *{
+        margin: 0;
+        padding: 2px;
+        text-transform: uppercase;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        background: plum;
+        color: black;
+        font-family: "Comic Sans MS";
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    .text1{
+        display: flex;
+    }
+    
+    .mundo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ad img{
+        width: 320px;
+        
+    }
+    .ad{
+        position:relative;
+        display:flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .review{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .review div{
+        width: 300px;
+    }
+}
+
+.dark-mode{
+    background: indigo;
+    color: plum;
+}
+.darkModeButton{
+    width: 75px;
+    height: 75px;
+}
+.oneReview{
+    margin: 15px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form input, #form select, #form textarea{
+    width: 150px;
+}
