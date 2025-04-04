@@ -1,0 +1,78 @@
+import psutil
+import time
+import logging
+
+# Настройка логирования
+logging.basicConfig(filename='Untitled-1', level=logging.INFO)
+
+# Функция для вывода информации о дисках
+def log_disk_usage():
+    disks = psutil.disk_partitions()
+    for disk in disks:
+        try:
+            # Получение информации о диске
+            usage = psutil.disk_usage(disk.mountpoint)
+            total_gb = usage.total / (1024  3)
+            used_gb = usage.used / (1024  3)
+            free_gb = usage.free / (1024  3)
+            
+            # Определение типа диска
+            disk_type = disk.fstype
+            
+            # Логирование информации
+            log_message = (
+                f"Диск: {disk.device}\n"
+                f"Тип: {disk_type}\n"
+                f"Общий объём: {total_gb:.2f} ГБ\n"
+                f"Занято: {used_gb:.2f} ГБ\n"
+                f"Свободно: {free_gb:.2f} ГБ\n"
+            )
+            print(log_message)
+            logging.info(log_message)
+        except Exception as e:
+            logging.error(f"Ошибка при обработке {disk.device}: {e}")
+
+# Начало задания
+if __name__ == "__main__":
+    while True:
+        log_disk_usage()
+        time.sleep(10)  # Пауза на 60 секунд перед следующей проверкой
+import psutil
+import time
+import logging
+
+# Настройка логирования
+logging.basicConfig(filename='Untitled-1', level=logging.INFO)
+
+# Функция для вывода информации о дисках
+def log_disk_usage():
+    disks = psutil.disk_partitions()
+    for disk in disks:
+        try:
+            # Получение информации о диске
+            usage = psutil.disk_usage(disk.mountpoint)
+            total_gb = usage.total / (1024  3)
+            used_gb = usage.used / (1024  3)
+            free_gb = usage.free / (1024  3)
+            
+            # Определение типа диска
+            disk_type = disk.fstype
+            
+            # Логирование информации
+            log_message = (
+                f"Диск: {disk.device}\n"
+                f"Тип: {disk_type}\n"
+                f"Общий объём: {total_gb:.2f} ГБ\n"
+                f"Занято: {used_gb:.2f} ГБ\n"
+                f"Свободно: {free_gb:.2f} ГБ\n"
+            )
+            print(log_message)
+            logging.info(log_message)
+        except Exception as e:
+            logging.error(f"Ошибка при обработке {disk.device}: {e}")
+
+# Начало задания
+if name == "main":
+    while True:
+        log_disk_usage()
+        time.sleep(10)  # Пауза на 60 секунд перед следующей проверкой

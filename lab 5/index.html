@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личная карточка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="editButton" onclick="edit = true; toggleEditMode()">✎ Редактировать</div>
+        <div id="editorButtons">
+            <div class="editorPanel">
+                <div id="addTitleButton" onclick="addElement('title')">Заголовок</div>
+                <div id="addImageButton" onclick="addElement('image')">Картинка</div>
+                <div id="addBoldButton" onclick="addElement('bold')">Подзаголовок</div>
+                <div id="addBoldButton" onclick="addElement('text')">Текст</div>
+            </div>
+            <div id="applyButton" onclick="edit = false; toggleEditMode()">✓ Применить</div>
+        </div>
+    </header>
+    <main>
+        <div id="content" style="display: block;"></div>
+        <div id="contentEditMode" style="display: none;"></div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

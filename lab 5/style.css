@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    width: 500px;
+}
+h1, h3 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#editButton, #applyButton, #addTitleButton, #addImageButton, #addBoldButton, #addTextButton, .remove-btn{
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 24px;
+    height: auto;
+    width: 250px;
+    color: ivory;
+    border-radius: 5px;
+}
+
+#editButton{
+    display: block;
+    background: rgb(115, 94, 127);
+}
+#applyButton{
+    background: rgb(94, 127, 99);
+}
+#addTitleButton, #addImageButton, #addBoldButton, #addTextButton{
+    background: darkgrey;
+    margin: 3px;
+    padding: 3px;
+}
+.remove-btn{
+    background: rgb(221, 160, 160);
+    width: 30px !important;
+}
+#editorButtons{
+    display: none;
+}
+#contentEditMode{
+    width: 250px;
+}
+
+.editFields{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.editorPanel{
+    display: flex;
+}
